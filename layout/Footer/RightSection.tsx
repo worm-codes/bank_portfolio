@@ -17,12 +17,14 @@ function RightSection() {
         width={isTablet ? 345 : 340}
         height={120}
       />
+
       <SocialList>
         {socialList.map((social, index) => (
           <Social key={`social-${index}`}>
             <Link
               href={social.url}
               rel="noreferrer noopener"
+              target="_blank"
             >
               {social.logo}
             </Link>

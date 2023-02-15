@@ -3,9 +3,8 @@ import Link from 'next/link';
 import styled from 'styled-components';
 
 import { Icon } from 'components';
+import { contactInformation, siteMap } from 'constant';
 import { devices } from 'theme';
-
-import { contactInformation, siteMap } from '../../constant/footerData';
 
 function LeftSection() {
   return (
