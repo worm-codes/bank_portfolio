@@ -1,10 +1,4 @@
-import { iconList, IconList } from 'types/icon';
-
-interface IconProps {
-  name: IconList;
-  color?: string;
-  size?: number;
-}
+import { iconList } from 'types/icon';
 
 const Icon = ({ name, color, size, ...props }: IconProps) => {
   const selectedIcon = iconList.find(icon => icon.label === name);

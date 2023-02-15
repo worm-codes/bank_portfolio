@@ -52,22 +52,22 @@ export const siteMap = [
 export const socialList = [
   {
     logo: <InstagramFilled />,
-    url: 'https://www.instagram.com/turkiyefinans',
+    url: '#',
   },
   {
     logo: <TwitterOutlined />,
-    url: 'https://twitter.com/turkiyefinans',
+    url: '#',
   },
   {
     logo: <FacebookFilled />,
-    url: 'https://www.facebook.com/turkiyefinans/',
+    url: '#',
   },
   {
     logo: <LinkedinFilled />,
-    url: 'https://www.linkedin.com/company/turkiyefinans/',
+    url: '#',
   },
   {
     logo: <YoutubeFilled />,
-    url: 'https://www.youtube.com/@TurkiyeFinans1',
+    url: '#',
   },
 ];

@@ -3,10 +3,9 @@ import Link from 'next/link';
 
 import styled from 'styled-components';
 
+import { socialList } from 'constant';
 import { useResponsive } from 'hooks';
 import { devices } from 'theme';
-
-import { socialList } from '../../constant/footerData';
 
 function RightSection() {
   const { isTablet } = useResponsive();
@@ -24,7 +23,6 @@ function RightSection() {
             <Link
               href={social.url}
               rel="noreferrer noopener"
-              target="_blank"
             >
               {social.logo}
             </Link>
