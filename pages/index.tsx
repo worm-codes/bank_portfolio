@@ -4,7 +4,7 @@ import Layout from 'layout';
 export default function Home() {
   return (
     <Layout meta={{ title: 'Home' }}>
-      <div>home</div>
+      <div>test</div>
     </Layout>
   );
 }
