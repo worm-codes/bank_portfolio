@@ -15,7 +15,7 @@ function RightSection() {
         src="/footerlogo.png"
         alt="footer logo"
         width={isTablet ? 345 : 340}
-        height={120}
+        height={180}
       />
 
       <SocialList>
