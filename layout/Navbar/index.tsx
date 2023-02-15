@@ -2,29 +2,27 @@ import { useState } from 'react';
 
 import Link from 'next/link';
 
-// import { CloseOutlined, MenuOutlined } from '@ant-design/icons';
-
+import { CloseOutlined, MenuOutlined } from '@ant-design/icons';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-// import { Button, Logo } from 'components';
-// import { useResponsive } from 'hooks';
+import { Button, Logo } from 'components';
+import { useResponsive } from 'hooks';
 import { devices } from 'theme';
 
-// import MenuItem from './MenuItem';
-// import MobileDropdown from './MobileDropdown';
-// import { links } from './links';
-// import useNavbarScroll from './useNavbarScroll';
+import MenuItem from './MenuItem';
+import MobileDropdown from './MobileDropdown';
+import { links } from './links';
+import useNavbarScroll from './useNavbarScroll';
 
 function Navbar() {
-  // const [isMenuOpen, setIsMenuOpen] = useState(false);
-  // const { isLaptop, isTablet } = useResponsive();
-  // const { hideHeader } = useNavbarScroll();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { isLaptop, isTablet } = useResponsive();
+  const { hideHeader } = useNavbarScroll();
 
   return (
-    // <NavbarWrapper animate={hideHeader ? { y: 'calc(-100% - 25px)' } : { y: 0 }}>
-    <NavbarWrapper>
-      {/* <StyledContainer>
+    <NavbarWrapper animate={hideHeader ? { y: 'calc(-100% - 25px)' } : { y: 0 }}>
+      <StyledContainer>
         <Link
           href="/"
           passHref
@@ -51,14 +49,14 @@ function Navbar() {
               ))}
             </NavbarLinks>
             <Link href="/giris">
-              <LoginButton>Giriş Yap</LoginButton>
+              <LoginButton>Login</LoginButton>
             </Link>
           </>
         )}
 
         {isTablet && (!isMenuOpen ? <MenuOutlined onClick={() => setIsMenuOpen(true)} /> : <CloseOutlined onClick={() => setIsMenuOpen(false)} />)}
         {isMenuOpen && <MobileDropdown />}
-      </StyledContainer> */}
+      </StyledContainer>
     </NavbarWrapper>
   );
 }
@@ -102,9 +100,9 @@ const NavbarLinks = styled.ul`
   list-style-type: none;
 `;
 
-// const LoginButton = styled(Button)`
-//   border-radius: 0;
-//   padding: ${p => `${p.theme.spacing.$3} ${p.theme.spacing.$6}`};
-//   font-size: ${p => p.theme.fontSizes.md};
-//   line-height: ${p => p.theme.lineHeights.md};
-// `;
+const LoginButton = styled(Button)`
+  border-radius: 0;
+  padding: ${p => `${p.theme.spacing.$3} ${p.theme.spacing.$6}`};
+  font-size: ${p => p.theme.fontSizes.md};
+  line-height: ${p => p.theme.lineHeights.md};
+`;

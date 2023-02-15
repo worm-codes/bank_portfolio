@@ -1,22 +1,22 @@
 export const links = [
   {
-    label: 'Bize Dair',
+    label: 'About Us',
     submenus: [
       {
-        label: 'Hakkımızda',
-        url: '/biz-kimiz',
+        label: 'About Us',
+        url: '/who-we-are',
       },
       {
-        label: 'Ödüllerimiz',
-        url: '/odullerimiz',
+        label: 'Awards',
+        url: '/awards',
       },
       {
-        label: 'İşbirliklerimiz',
-        url: '/is-birliklerimiz',
+        label: 'Collabrations',
+        url: '/collabrations',
       },
     ],
   },
-  { label: 'Bizden Haberler', url: '/bizden-haberler' },
-  { label: 'Okullarımız', url: '/okullarimiz' },
-  { label: 'İletişim', url: '/iletisim' },
+  { label: 'News From Us', url: '/news-from-us' },
+  { label: 'Schools', url: '/schools' },
+  { label: 'Contact', url: '/contact' },
 ];

@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 import styled from 'styled-components';
 
-// import { Icon } from 'components';
+import { Icon } from 'components';
 import { devices } from 'theme';
 
 import Dropdown from './Dropdown';
@@ -30,7 +30,9 @@ function MenuItem({ item, index }: MenuItemProps) {
             onClick={() => setIsDropdownOpen(prev => !prev)}
           >
             {item.label}
-            <IconWrapper>{/* <Icon name={isDropdownOpen ? 'arrow-up' : 'arrow-down'} /> */}</IconWrapper>
+            <IconWrapper>
+              <Icon name={isDropdownOpen ? 'arrow-up' : 'arrow-down'} />
+            </IconWrapper>
           </SubMenuWrapper>
           {item.submenus && (
             <Dropdown
