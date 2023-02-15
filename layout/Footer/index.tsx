@@ -2,20 +2,20 @@ import styled from 'styled-components';
 
 import { devices } from 'theme';
 
-// import Copyright from './Copyright';
-// import LeftSection from './LeftSection';
-// import RightSection from './RightSection';
+import Copyright from './Copyright';
+import LeftSection from './LeftSection';
+import RightSection from './RightSection';
 
 function Footer() {
   return (
     <>
-      {/* <FooterContainer>
+      <FooterContainer>
         <FooterWrapper>
           <LeftSection />
           <RightSection />
         </FooterWrapper>
       </FooterContainer>
-      <Copyright /> */}
+      <Copyright />
     </>
   );
 }

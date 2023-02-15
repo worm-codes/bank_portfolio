@@ -3,26 +3,21 @@ import Link from 'next/link';
 
 import styled from 'styled-components';
 
-// import { Icon } from 'components';
-// import { useResponsive } from 'hooks';
+import { useResponsive } from 'hooks';
 import { devices } from 'theme';
 
-import { socialList } from './footerData';
+import { socialList } from '../../constant/footerData';
 
 function RightSection() {
-  // const { isTablet } = useResponsive();
+  const { isTablet } = useResponsive();
   return (
     <RightSectionWrapper>
-      {/* <Image
-        src="/images/footer-logo.svg"
+      <Image
+        src="/footerlogo.png"
         alt="footer logo"
         width={isTablet ? 345 : 340}
         height={120}
-      /> */}
-      <StyledLink href="https://turkiyefinans.com.tr">
-        {/* <Icon name="external-link" /> */}
-        www.turkiyefinans.com.tr
-      </StyledLink>
+      />
       <SocialList>
         {socialList.map((social, index) => (
           <Social key={`social-${index}`}>
@@ -63,25 +58,6 @@ const RightSectionWrapper = styled.div`
 
   @media ${devices.tablet} {
     display: block;
-  }
-`;
-
-const StyledLink = styled(Link)`
-  color: ${p => p.theme.colors.primary.base};
-  display: flex;
-  align-items: center;
-  margin-top: ${p => p.theme.spacing.base};
-  margin-left: ${p => p.theme.spacing.$24};
-  font-size: ${p => p.theme.fontSizes.lg};
-  line-height: ${p => p.theme.lineHeights.lg};
-  font-weight: ${p => p.theme.fontWeights.light};
-  svg {
-    margin-right: ${p => p.theme.spacing.$3};
-  }
-
-  @media ${devices.tablet} {
-    margin-left: ${p => p.theme.spacing.base};
-    margin-bottom: ${p => p.theme.spacing.base};
   }
 `;
 

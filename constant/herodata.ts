@@ -13,7 +13,7 @@ const data = [
     updatedAt: '2023-01-31T06:20:41.000Z',
     title: 'We have more than 500 team mates.',
     description: 'We grow up together. We will grow up together.',
-    image: '/heroimage/logo.png',
+    image: '/heroimage/teamlogo.png',
   },
 ];
 

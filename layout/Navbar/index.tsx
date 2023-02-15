@@ -30,7 +30,7 @@ function Navbar() {
           {isLaptop ? (
             <Logo
               width={!isTablet ? 120 : 88}
-              height={!isTablet ? 43 : 32}
+              height={!isTablet ? 88 : 77}
             />
           ) : (
             <Logo />
@@ -48,13 +48,16 @@ function Navbar() {
                 />
               ))}
             </NavbarLinks>
-            <Link href="/giris">
-              <LoginButton>Login</LoginButton>
-            </Link>
           </>
         )}
 
-        {isTablet && (!isMenuOpen ? <MenuOutlined onClick={() => setIsMenuOpen(true)} /> : <CloseOutlined onClick={() => setIsMenuOpen(false)} />)}
+        <div>
+          <Link href="/giris">
+            <LoginButton>Login</LoginButton>
+          </Link>
+          {isTablet && (!isMenuOpen ? <MenuOutlined onClick={() => setIsMenuOpen(true)} /> : <CloseOutlined onClick={() => setIsMenuOpen(false)} />)}
+        </div>
+
         {isMenuOpen && <MobileDropdown />}
       </StyledContainer>
     </NavbarWrapper>
@@ -105,4 +108,5 @@ const LoginButton = styled(Button)`
   padding: ${p => `${p.theme.spacing.$3} ${p.theme.spacing.$6}`};
   font-size: ${p => p.theme.fontSizes.md};
   line-height: ${p => p.theme.lineHeights.md};
+  margin-right: ${p => p.theme.spacing.$5};
 `;

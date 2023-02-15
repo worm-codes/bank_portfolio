@@ -2,20 +2,20 @@ import Image from 'next/image';
 
 import styled from 'styled-components';
 
-// import { useResponsive } from 'hooks';
+import { useResponsive } from 'hooks';
 import { devices } from 'theme';
 
 function Copyright() {
-  // const { isTablet } = useResponsive();
+  const { isTablet } = useResponsive();
   return (
     <CopyrightWrapper>
-      {/* <Image
-        src="/images/white-logo.svg"
-        width={isTablet ? 112 : 135}
-        height={isTablet ? 40 : 48}
+      <Image
+        src="/logo.png"
+        width={!isTablet ? 120 : 88}
+        height={!isTablet ? 88 : 77}
         alt="copyright logo"
-      /> */}
-      <CopyrightText>Copyright © 2022 </CopyrightText>
+      />
+      <CopyrightText>Copyright © 2022 Anonymous Bank</CopyrightText>
     </CopyrightWrapper>
   );
 }
@@ -27,8 +27,8 @@ const CopyrightWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: ${p => p.theme.colors.primary.base};
-  color: ${p => p.theme.colors.white};
+  background-color: ${p => p.theme.colors.primary.light};
+  color: ${p => p.theme.colors.grayDark.gray500};
   padding: ${p => {
     const { $5, $20 } = p.theme.spacing;
     return `${$5} ${$20}`;

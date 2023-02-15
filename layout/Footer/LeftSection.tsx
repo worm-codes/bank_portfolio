@@ -2,16 +2,16 @@ import Link from 'next/link';
 
 import styled from 'styled-components';
 
-// import { Icon } from 'components';
+import { Icon } from 'components';
 import { devices } from 'theme';
 
-import { contactInformation, policies, siteMap } from './footerData';
+import { contactInformation, siteMap } from '../../constant/footerData';
 
 function LeftSection() {
   return (
     <LeftSectionWrapper>
       <div>
-        <Title>İletişim</Title>
+        <Title>Contact</Title>
         <FooterList>
           {contactInformation.map((contact, index) => (
             <ListElement key={`contact-${index}`}>
@@ -21,7 +21,7 @@ function LeftSection() {
                 target={contact.name === 'map-pin' ? '_blank' : '_self'}
               >
                 <ContactWrapper>
-                  {/* <Icon name={contact.name} /> */}
+                  <Icon name={contact.name} />
                   <ContactLabel>{contact.value}</ContactLabel>
                 </ContactWrapper>
               </Link>
@@ -30,7 +30,7 @@ function LeftSection() {
         </FooterList>
       </div>
       <div>
-        <Title>Site Haritası</Title>
+        <Title>Navigation</Title>
         <FooterList>
           {siteMap.map((link, index) => (
             <ListElement key={`sitemap-url-${index}`}>
@@ -39,21 +39,6 @@ function LeftSection() {
                 passHref
               >
                 {link.label}
-              </Link>
-            </ListElement>
-          ))}
-        </FooterList>
-      </div>
-      <div>
-        <Title>Politikalarımız</Title>
-        <FooterList>
-          {policies.map((policy, index) => (
-            <ListElement key={`policy-${index}`}>
-              <Link
-                href={policy.url}
-                passHref
-              >
-                {policy.label}
               </Link>
             </ListElement>
           ))}

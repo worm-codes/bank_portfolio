@@ -8,59 +8,44 @@ export const contactInformation = [
   },
   {
     name: 'map-pin',
-    value: 'Saray Mahallesi Sokullu Caddesi No:6 Ümraniye/İstanbul ',
-    url: 'https://goo.gl/maps/T74VfhT7y9rgnUmb7',
+    value: '7017 E. Walnutwood Road Danbury, CT 06810 ',
+    url: 'https://goo.gl/maps/QqJUfR1r9qjmqnms8',
   },
   {
     name: 'mail',
-    value: 'hi@turkiyefinans.com',
-    url: 'mailto:hi@turkiyefinans.com',
+    value: 'oguzhan728@gmail.com',
+    url: 'mailto:oguzhan728@gmail.com',
   },
 ];
 
 export const siteMap = [
   {
-    label: 'Anasayfa',
+    label: 'Home',
     url: '/',
   },
   {
-    label: 'Biz Kimiz',
-    url: '/biz-kimiz',
+    label: 'Who We Are',
+    url: '/who-we-are',
   },
   {
-    label: 'Ödüllerimiz',
-    url: '/odullerimiz',
+    label: 'Awards',
+    url: '/awards',
   },
   {
-    label: 'İşbirliklerimiz',
-    url: '/is-birliklerimiz',
+    label: 'Collaborations',
+    url: '/collaborations',
   },
   {
-    label: 'Okullarımız',
-    url: '/okullarimiz',
+    label: 'Schools',
+    url: '/schools',
   },
   {
-    label: 'Bizden Haberler',
-    url: '/bizden-haberler',
+    label: 'News From Us',
+    url: '/news-from-us',
   },
   {
-    label: 'İletişim',
-    url: '/iletisim',
-  },
-];
-
-export const policies = [
-  {
-    label: 'Gizlilik Politikamız',
-    url: 'gizlilik-politikamiz',
-  },
-  {
-    label: 'Çerez Politikamız',
-    url: 'cerez-politikamiz',
-  },
-  {
-    label: 'Aydınlatma Metni',
-    url: 'aydinlatma-metni',
+    label: 'Contact Us',
+    url: '/contact-us',
   },
 ];
 
