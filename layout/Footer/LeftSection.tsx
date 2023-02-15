@@ -63,7 +63,7 @@ const LeftSectionWrapper = styled.div`
   }
 
   @media ${devices.tablet} {
-    margin-top: 144px;
+    margin-top: 184px;
     padding-top: 0;
     margin-left: ${p => p.theme.spacing.base};
     gap: 0;
