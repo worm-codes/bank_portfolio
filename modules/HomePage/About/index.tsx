@@ -8,7 +8,8 @@ import { Button } from 'components';
 import { homecontentdata } from 'constant';
 import { devices } from 'theme';
 
-import Leaves from './Leaves';
+import Leaves from '../Leaves';
+
 import Strokes from './Strokes';
 
 function About() {
