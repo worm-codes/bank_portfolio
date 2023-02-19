@@ -52,7 +52,7 @@ const SubMenu = styled.ul<SubMenuProps>`
 const NavbarMenuLink = styled(Link)`
   font-weight: ${p => p.theme.fontWeights.medium};
   color: ${p => p.theme.colors.grayDark.gray900};
-  padding: ${p => `${p.theme.spacing.$3} ${p.theme.spacing.$6}`};
+  padding: ${p => `${p.theme.spacing.$3} ${p.theme.spacing.$3}`};
 
   &:hover {
     color: ${p => p.theme.colors.primary.base};

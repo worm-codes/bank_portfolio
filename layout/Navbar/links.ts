@@ -3,7 +3,7 @@ export const links = [
     label: 'About Us',
     submenus: [
       {
-        label: 'About Us',
+        label: 'Who We Are',
         url: '/who-we-are',
       },
       {
