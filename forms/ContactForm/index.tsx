@@ -89,7 +89,7 @@ function ContactForm() {
 
       <StyledButton
         type="submit"
-        disabled={!(formik.isValid && formik.dirty)}
+        // disabled={!(formik.isValid && formik.dirty)}
       >
         Send
       </StyledButton>
@@ -103,6 +103,7 @@ const FormWrapper = styled.form`
   display: flex;
   flex-direction: column;
   max-width: 480px;
+  padding: ${p => p.theme.spacing.$5};
   & > *:not(:last-child) {
     margin-bottom: ${p => p.theme.spacing.$6};
   }
