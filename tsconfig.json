@@ -19,6 +19,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "admin/components/index", "admin/modules/index", "forms/index", "hooks/index.ts", "pages/admin/index", "stores/index", "utils/index"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "admin/components/index", "admin/modules/index", "forms/index", "hooks/index.ts", "pages/admin/index", "stores/index", "utils/index.ts"],
   "exclude": ["node_modules"]
 }

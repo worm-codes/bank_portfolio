@@ -1,6 +1,7 @@
 import About from './About';
 import EducationalContent from './EducationalContent';
 import HeroSection from './HeroSection';
+import NewsFromUs from './NewsFromUs';
 
 function HomePage() {
   return (
@@ -8,6 +9,7 @@ function HomePage() {
       <HeroSection />
       <About />
       <EducationalContent />
+      <NewsFromUs />
     </>
   );
 }
