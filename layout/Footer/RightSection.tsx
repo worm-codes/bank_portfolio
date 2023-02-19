@@ -66,6 +66,7 @@ const SocialList = styled.div`
   gap: ${p => p.theme.spacing.base};
   margin-top: ${p => p.theme.spacing.$8};
   margin-left: ${p => p.theme.spacing.base};
+  justify-content: center;
 
   @media ${devices.tablet} {
     margin: 0;
