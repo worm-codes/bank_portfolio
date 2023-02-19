@@ -45,7 +45,7 @@ export const siteMap = [
   },
   {
     label: 'Contact Us',
-    url: '/contact-us',
+    url: '/contact',
   },
 ];
 
