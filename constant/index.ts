@@ -6,3 +6,4 @@ export { default as newsdata } from './newsdata';
 export { default as schools } from './schooldata';
 export { default as contactInfo } from './contactinfo';
 export { default as awards } from './awards';
+export { iconGroup, modelCards, appCards, aboutcontent } from './aboutdata';
