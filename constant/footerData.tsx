@@ -3,7 +3,7 @@ import { FacebookFilled, InstagramFilled, LinkedinFilled, TwitterOutlined, Youtu
 export const contactInformation = [
   {
     name: 'phone',
-    value: '0216 676 20 00',
+    value: '888 6821 043',
     url: 'tel:02166762000',
   },
   {

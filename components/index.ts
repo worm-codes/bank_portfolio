@@ -5,3 +5,5 @@ export { default as Logo } from './Logo';
 export { default as Icon } from './Icon';
 export { default as Swiper } from './Swiper';
 export { default as Card } from './Card';
+export { default as Checkbox } from './Checkbox';
+export { default as Input } from './Input';
