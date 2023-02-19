@@ -91,11 +91,3 @@ const Label = styled.h6`
   color: ${p => p.theme.colors.grayDark.gray700};
   font-weight: ${p => p.theme.fontWeights.medium};
 `;
-
-const StyledLink = styled(Link)`
-  font-size: ${p => p.theme.fontSizes.md};
-  line-height: ${p => p.theme.lineHeights.md};
-  color: ${p => p.theme.colors.grayDark.gray800};
-  font-weight: ${p => p.theme.fontWeights.medium};
-  max-width: 325px;
-`;

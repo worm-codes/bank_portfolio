@@ -44,7 +44,7 @@ const Subtitle = styled.h6`
   font-size: ${p => p.theme.fontSizes.sm};
   line-height: ${p => p.theme.lineHeights.md};
   color: ${p => p.theme.colors.primary.base};
-  margin-top: ${p => p.theme.spacing.$20};
+  margin-top: ${p => p.theme.spacing.$8};
 
   @media ${devices.tablet} {
     font-size: ${p => p.theme.fontSizes.xs};
