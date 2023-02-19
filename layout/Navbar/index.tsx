@@ -51,12 +51,7 @@ function Navbar() {
           </>
         )}
 
-        <div>
-          <Link href="/giris">
-            <LoginButton>Login</LoginButton>
-          </Link>
-          {isTablet && (!isMenuOpen ? <MenuOutlined onClick={() => setIsMenuOpen(true)} /> : <CloseOutlined onClick={() => setIsMenuOpen(false)} />)}
-        </div>
+        <div>{isTablet && (!isMenuOpen ? <MenuOutlined onClick={() => setIsMenuOpen(true)} /> : <CloseOutlined onClick={() => setIsMenuOpen(false)} />)}</div>
 
         {isMenuOpen && <MobileDropdown />}
       </StyledContainer>
@@ -101,12 +96,4 @@ const NavbarLinks = styled.ul`
   display: flex;
   gap: ${p => p.theme.spacing.base};
   list-style-type: none;
-`;
-
-const LoginButton = styled(Button)`
-  border-radius: 0;
-  padding: ${p => `${p.theme.spacing.$3} ${p.theme.spacing.$6}`};
-  font-size: ${p => p.theme.fontSizes.md};
-  line-height: ${p => p.theme.lineHeights.md};
-  margin-right: ${p => p.theme.spacing.$5};
 `;

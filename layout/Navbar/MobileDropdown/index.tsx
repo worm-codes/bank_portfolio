@@ -10,9 +10,6 @@ function MobileDropdown() {
   return (
     <Wrapper>
       <MobileNav />
-      <ButtonWrapper>
-        <Link href="/giris">{/* <LoginButton>Giriş Yap</LoginButton> */}</Link>
-      </ButtonWrapper>
     </Wrapper>
   );
 }
@@ -36,8 +33,3 @@ const ButtonWrapper = styled.div`
     return `${$12} ${base} 0 ${base}`;
   }};
 `;
-
-// const LoginButton = styled(Button)`
-//   border-radius: 0;
-//   width: 100%;
-// `;
