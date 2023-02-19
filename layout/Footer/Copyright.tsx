@@ -10,9 +10,9 @@ function Copyright() {
   return (
     <CopyrightWrapper>
       <Image
-        src="/logo.png"
+        src="/heroimage/logo.png"
         width={!isTablet ? 120 : 88}
-        height={!isTablet ? 88 : 77}
+        height={!isTablet ? 88 : 70}
         alt="copyright logo"
       />
       <CopyrightText>Copyright © 2022 Anonymous Bank</CopyrightText>
@@ -27,7 +27,7 @@ const CopyrightWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: ${p => p.theme.colors.primary.light};
+  background-color: ${p => p.theme.colors.primary.base};
   color: ${p => p.theme.colors.grayDark.gray500};
   padding: ${p => {
     const { $5, $20 } = p.theme.spacing;
@@ -36,16 +36,16 @@ const CopyrightWrapper = styled.div`
 
   @media ${devices.tablet} {
     padding: ${p => {
-      const { $5, base } = p.theme.spacing;
-      return `${$5} ${base}`;
+      const { $5, $7 } = p.theme.spacing;
+      return `${$5} ${$7}`;
     }};
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 `;
 
 const CopyrightText = styled.p`
-  font-weight: ${p => p.theme.fontWeights.light};
+  font-weight: ${p => p.theme.fontWeights.regular};
+  color: ${p => p.theme.colors.white};
 
   @media ${devices.tablet} {
     font-size: ${p => p.theme.fontSizes.sm};
