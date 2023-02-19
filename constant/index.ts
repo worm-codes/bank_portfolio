@@ -5,3 +5,4 @@ export { default as educationData } from './educationdata';
 export { default as newsdata } from './newsdata';
 export { default as schools } from './schooldata';
 export { default as contactInfo } from './contactinfo';
+export { default as awards } from './awards';
