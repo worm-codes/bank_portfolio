@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { Button } from 'components';
 import { devices } from 'theme';
 
-import Leaves from '../Leaves/index';
+import Leaves from '../HomePage/Leaves/index';
 
 function NewsHeader() {
   return (

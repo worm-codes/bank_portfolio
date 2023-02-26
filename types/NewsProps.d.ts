@@ -6,7 +6,5 @@ interface SingleNewProps {
   date: string;
   mainImage: string;
   homepageImage: string;
-  sliderImages?: { image: string }[];
   sliderStrings?: string[];
-  tags?: string;
 }

@@ -4,3 +4,5 @@ export { default as Contact } from './Contact';
 export { default as Awards } from './Awards';
 export { default as AboutUs } from './AboutUs';
 export { default as NewsFromUs } from './NewsFromUs';
+export { default as NewsDetails } from './NewsDetails';
+export { default as NewsFromUsHome } from './NewsFromUsHome';
