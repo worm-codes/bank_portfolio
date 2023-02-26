@@ -10,10 +10,6 @@ export const links = [
         label: 'Awards',
         url: '/awards',
       },
-      {
-        label: 'Collabrations',
-        url: '/collabrations',
-      },
     ],
   },
   { label: 'News From Us', url: '/news-from-us' },

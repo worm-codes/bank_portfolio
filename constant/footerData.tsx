@@ -31,10 +31,7 @@ export const siteMap = [
     label: 'Awards',
     url: '/awards',
   },
-  {
-    label: 'Collaborations',
-    url: '/collaborations',
-  },
+
   {
     label: 'Schools',
     url: '/schools',
