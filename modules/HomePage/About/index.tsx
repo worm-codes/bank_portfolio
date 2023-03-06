@@ -45,7 +45,7 @@ function About() {
           </AboutTitle>
           <p>{homecontentdata.aboutDescription}</p>
           <ButtonWrapper>
-            <Link href="/about-us">
+            <Link href="/who-we-are">
               <StyledButton>Show more!</StyledButton>
             </Link>
           </ButtonWrapper>
