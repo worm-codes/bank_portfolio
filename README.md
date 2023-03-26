@@ -8,7 +8,7 @@ The purpose of this project is to provide a portal for a bank company, so user c
 
 ## Getting Started
 
-To get started with this project, you'll need to have [Node.js](https://nodejs.org/) and [yarn](https://www.npmjs.com/) installed on your computer.
+To get started with this project, you'll need to have [Node.js](https://nodejs.org/) and [yarn](https://yarnpkg.com/) installed on your computer.
 
 1. Clone this repository to your local machine using `git clone https://github.com/<YOUR-USERNAME>/bankPortalProject.git`
 2. Navigate to the project directory using `cd bankPortalProject`
